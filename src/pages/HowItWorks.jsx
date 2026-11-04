@@ -55,7 +55,7 @@ export default function HowItWorks() {
       </details>
       <details>
         <summary>Ar galiu pratęsti nuomą?</summary>
-        <p>Taip, iki nuomos pabaigos gali pratęsti ją dar 4 dienoms.</p>
+        <p>Taip, tai padaryti gali prie drabužio įrašo istorijoje.</p>
       </details>
 
       <Link to="/drabuziai" className="button button-primary">Peržiūrėti drabužius</Link>

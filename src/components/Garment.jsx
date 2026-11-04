@@ -1,5 +1,5 @@
 // Simple flat garment illustrations used instead of product photos in the prototype.
-const SHAPES = {
+export const SHAPES = {
   dress: 'M40 22 L60 22 L63 40 L58 50 L80 124 L20 124 L42 50 L37 40 Z',
   top: 'M36 22 L44 20 Q50 28 56 20 L64 22 L86 42 L77 52 L68 45 L68 112 L32 112 L32 45 L23 52 L14 42 Z',
   jacket: 'M34 22 L44 20 L50 40 L56 20 L66 22 L82 38 L86 102 L76 102 L72 56 L72 114 L28 114 L28 56 L24 102 L14 102 L18 38 Z',
@@ -7,7 +7,7 @@ const SHAPES = {
   pants: 'M30 24 L70 24 L76 126 L56 126 L50 62 L44 126 L24 126 Z',
 };
 
-const LAPELS = 'M44 20 L50 62 L56 20';
+export const LAPELS = 'M44 20 L50 62 L56 20';
 
 export default function Garment({ shape = 'top', color = '#999', className = '', label }) {
   const hasLapels = shape === 'jacket' || shape === 'coat';

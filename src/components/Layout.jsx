@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { useCart } from '../context/CartContext.jsx';
+import AccountMenu from './AccountMenu.jsx';
 import { BRAND } from '../config.js';
 
 export default function Layout() {
@@ -30,6 +31,8 @@ export default function Layout() {
               Krepšelis
               {items.length > 0 && <span className="cart-count">{items.length}</span>}
             </NavLink>
+            <AccountMenu />
+
           </nav>
         </div>
       </header>

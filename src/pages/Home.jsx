@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import Garment from '../components/Garment.jsx';
 import ProductCard from '../components/ProductCard.jsx';
 import { products, getCategory, OCCASIONS } from '../data/products.js';
+import PersonalSet from '../components/PersonalSet.jsx';
 
 const RAIL_IDS = ['smaragdo-suknele', 'smelio-svarkas', 'balti-marskiniai', 'kupranugario-paltas', 'bordo-vakarine', 'tamsiai-melynas-kostiumas'];
 const FEATURED_IDS = ['smaragdo-suknele', 'tamsiai-melynas-kostiumas', 'silkine-palaidine', 'kupranugario-paltas'];
@@ -44,7 +45,7 @@ export default function Home() {
             </li>
             <li>
               <h3>Nešiok</h3>
-              <p>Drabužį gausi išvalytą. Nešiok nuo 4 iki 14 dienų.</p>
+              <p>Drabužį gausi išvalytą. Nešiok pasirinktą laikotarpį.</p>
             </li>
             <li>
               <h3>Grąžink</h3>
@@ -68,7 +69,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section ">
+        <div className="container">
+          <div className="section-head">
+            <h2>Gauk asmeninį rinkinį</h2>
+            <Link to="/asm-pasiulymas" className="button button-primary">Išbandyti</Link>
+          </div>
+          < PersonalSet />
+        </div>
+      </section>
+
+      <section className="section section-tinted">
         <div className="container">
           <h2>Kokiai progai?</h2>
           <div className="occasion-list">
